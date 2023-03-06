@@ -1,0 +1,19 @@
+
+/_dist_/
+/_build_/
+/MeeMake/Assets/TextMesh Pro/
+/MeeMake/Assets/TextMesh Pro.meta
+/MeeMake/Assets/Plugins/
+/MeeMake/Assets/Plugins.meta
+/MeeMake/Assets/3rd/
+/MeeMake/Assets/3rd.meta
+/MeeMake/Library/
+/MeeMake/obj/
+/MeeMake/Logs/
+/MeeMake/Temp/
+/MeeMake/UserSettings/
+/MeeMake/*.sln
+/MeeMake/*.csproj
+/MeeMake/.vsconfig
+/MeeMake/.vs/
+/.UNITY_HOME.env
