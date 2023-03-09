@@ -94,7 +94,7 @@ namespace XTC.FMP.MOD.MeeMake.LIB.Unity
 
             if (style_.camera.provide)
             {
-                camera_ = GameObject.Instantiate(rootWorld.transform.Find("Camera")).GetComponent<Camera>();
+                camera_ = rootWorld.transform.Find("Camera").GetComponent<Camera>();
                 camera_.transform.SetParent(rootWorld.transform);
                 camera_.transform.localPosition = Vector3.zero;
                 camera_.rect = new Rect(style_.camera.viewport.x, style_.camera.viewport.y, style_.camera.viewport.w, style_.camera.viewport.h);
@@ -164,7 +164,6 @@ namespace XTC.FMP.MOD.MeeMake.LIB.Unity
             runtime_.Initialize(rootWorld);
             // 移动Canvas3D到世界坐标原点，加载完成后，再移动到spaceRoot的原点
             runtime_.slotCanvas3D.position = Vector3.zero;
-            logger_.Warning(uri);
             runtime_.Preload(uri);
         }
 

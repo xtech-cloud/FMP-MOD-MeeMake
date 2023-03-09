@@ -32,7 +32,7 @@
         -->
         <Viewport x="0" y="0" w="1" h="1"/>
       </Camera>
-      <Loading background="#00000000">
+      <Loading background="#000000FF">
       </Loading>
     </Style>
   </Styles>

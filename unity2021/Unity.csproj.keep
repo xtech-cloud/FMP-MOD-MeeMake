@@ -84,6 +84,24 @@
     <Reference Include="UnityEngine.TextRenderingModule">
       <HintPath>{{UNITY_HOME}}\Editor\Data\Managed\UnityEngine\UnityEngine.TextRenderingModule.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>{{UNITY_HOME}}\Editor\Data\Managed\UnityEngine\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>{{UNITY_HOME}}\Editor\Data\Managed\UnityEngine\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="AVProVideoPlugin">
+      <HintPath>{{WORK_DIR}}\MeeMake\Assets\3rd\AVProVideo-1.10.2\AVProVideoPlugin.dll</HintPath>
+    </Reference>
+    <Reference Include="EasyTouch">
+      <HintPath>{{WORK_DIR}}\MeeMake\Assets\3rd\EasyTouch-5.0.17\EasyTouchPlugin.dll</HintPath>
+    </Reference>
+    <Reference Include="oelArchive">
+      <HintPath>{{WORK_DIR}}\MeeMake\Assets\3rd\oelArchive-1.1.0\oelArchive.dll</HintPath>
+    </Reference>
+    <Reference Include="XLuaPlugin">
+      <HintPath>{{WORK_DIR}}\MeeMake\Assets\3rd\xlua-2.1.16\XLuaPlugin.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
