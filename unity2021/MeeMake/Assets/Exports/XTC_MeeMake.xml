@@ -22,8 +22,9 @@
       <!-- 摄像机
           provide：是否提供一个专用的独立摄像机。如果不提供，则需要自行实现手势交互，以及处理多播放器的渲染叠加问题
           depth：摄像机深度值，仅当provide为true时有效
+          renderer: 渲染器，可选值为["none", "texture"]，注：texture模式无法显示热点
       -->
-      <Camera provide="true" depth="0">
+      <Camera provide="true" depth="0" renderer="none">
         <!-- 摄像机视窗，仅当provide为true时有效
             x：X坐标
             y：Y坐标

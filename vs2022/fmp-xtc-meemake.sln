@@ -3,21 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9EED3627-C325-44BB-99A6-649C736C6A29}") = "fmp-xtc-meemake-lib-mvcs", "fmp-xtc-meemake-lib-mvcs\fmp-xtc-meemake-lib-mvcs.csproj", "{72A2095B-C966-4A2C-A85C-D636F5EB945E}"
+Project("{061FB609-8D90-480B-A3F5-3C4E9345C31B}") = "fmp-xtc-meemake-lib-mvcs", "fmp-xtc-meemake-lib-mvcs\fmp-xtc-meemake-lib-mvcs.csproj", "{7A67310A-A4FA-49E2-85D0-75F8B51FAE6B}"
 EndProject
-Project("{9EED3627-C325-44BB-99A6-649C736C6A29}") = "fmp-xtc-meemake-lib-mvcs_Test", "fmp-xtc-meemake-lib-mvcs_Test\fmp-xtc-meemake-lib-mvcs_Test.csproj", "{9E67E393-0A8A-4AD8-BF05-63274CA55353}"
+Project("{061FB609-8D90-480B-A3F5-3C4E9345C31B}") = "fmp-xtc-meemake-lib-mvcs_Test", "fmp-xtc-meemake-lib-mvcs_Test\fmp-xtc-meemake-lib-mvcs_Test.csproj", "{B0352711-05AA-40E5-9012-EBCA38AE3F61}"
 EndProject
-Project("{9EED3627-C325-44BB-99A6-649C736C6A29}") = "fmp-xtc-meemake-lib-proto", "fmp-xtc-meemake-lib-proto\fmp-xtc-meemake-lib-proto.csproj", "{9EA5CDE0-E324-4DB3-B784-7B1249360B8D}"
+Project("{061FB609-8D90-480B-A3F5-3C4E9345C31B}") = "fmp-xtc-meemake-lib-proto", "fmp-xtc-meemake-lib-proto\fmp-xtc-meemake-lib-proto.csproj", "{380AC10D-D76E-4C51-B59D-8D847A904D88}"
 EndProject
-Project("{9EED3627-C325-44BB-99A6-649C736C6A29}") = "fmp-xtc-meemake-lib-bridge", "fmp-xtc-meemake-lib-bridge\fmp-xtc-meemake-lib-bridge.csproj", "{0880EF4A-EAA9-4F74-B808-E53D01572E53}"
+Project("{061FB609-8D90-480B-A3F5-3C4E9345C31B}") = "fmp-xtc-meemake-lib-bridge", "fmp-xtc-meemake-lib-bridge\fmp-xtc-meemake-lib-bridge.csproj", "{7F743463-75FF-47F0-87CD-DFD36ED0F7E5}"
 EndProject
-Project("{9EED3627-C325-44BB-99A6-649C736C6A29}") = "fmp-xtc-meemake-lib-razor", "fmp-xtc-meemake-lib-razor\fmp-xtc-meemake-lib-razor.csproj", "{608283B8-3B52-4400-868B-BB7B06E5360E}"
+Project("{061FB609-8D90-480B-A3F5-3C4E9345C31B}") = "fmp-xtc-meemake-lib-razor", "fmp-xtc-meemake-lib-razor\fmp-xtc-meemake-lib-razor.csproj", "{E708C900-038E-4DDE-89A7-A0852BB4FAB7}"
 EndProject
-Project("{9EED3627-C325-44BB-99A6-649C736C6A29}") = "fmp-xtc-meemake-service-grpc", "fmp-xtc-meemake-service-grpc\fmp-xtc-meemake-service-grpc.csproj", "{C67E5973-13F5-4A9B-9EAD-785433A7EFBE}"
+Project("{061FB609-8D90-480B-A3F5-3C4E9345C31B}") = "fmp-xtc-meemake-service-grpc", "fmp-xtc-meemake-service-grpc\fmp-xtc-meemake-service-grpc.csproj", "{1810ADDE-A2D9-4C59-A9E9-A32E58AA489B}"
 EndProject
-Project("{9EED3627-C325-44BB-99A6-649C736C6A29}") = "fmp-xtc-meemake-service-grpc_Test", "fmp-xtc-meemake-service-grpc_Test\fmp-xtc-meemake-service-grpc_Test.csproj", "{D6F92397-D286-4018-A37C-315AB95C0E8A}"
+Project("{061FB609-8D90-480B-A3F5-3C4E9345C31B}") = "fmp-xtc-meemake-service-grpc_Test", "fmp-xtc-meemake-service-grpc_Test\fmp-xtc-meemake-service-grpc_Test.csproj", "{7E5D372F-6D19-4E52-A7C6-385015793510}"
 EndProject
-Project("{9EED3627-C325-44BB-99A6-649C736C6A29}") = "fmp-xtc-meemake-web-blazor", "fmp-xtc-meemake-web-blazor\fmp-xtc-meemake-web-blazor.csproj", "{0BF37D5A-17E4-44BC-BABE-9462E7E242A9}"
+Project("{061FB609-8D90-480B-A3F5-3C4E9345C31B}") = "fmp-xtc-meemake-web-blazor", "fmp-xtc-meemake-web-blazor\fmp-xtc-meemake-web-blazor.csproj", "{90DF4C2D-9684-4CA3-8A21-B0A3A7F47A17}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,43 +25,43 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-                {72A2095B-C966-4A2C-A85C-D636F5EB945E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{72A2095B-C966-4A2C-A85C-D636F5EB945E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{72A2095B-C966-4A2C-A85C-D636F5EB945E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{72A2095B-C966-4A2C-A85C-D636F5EB945E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9E67E393-0A8A-4AD8-BF05-63274CA55353}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9E67E393-0A8A-4AD8-BF05-63274CA55353}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9E67E393-0A8A-4AD8-BF05-63274CA55353}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9E67E393-0A8A-4AD8-BF05-63274CA55353}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9EA5CDE0-E324-4DB3-B784-7B1249360B8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9EA5CDE0-E324-4DB3-B784-7B1249360B8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9EA5CDE0-E324-4DB3-B784-7B1249360B8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9EA5CDE0-E324-4DB3-B784-7B1249360B8D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C67E5973-13F5-4A9B-9EAD-785433A7EFBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C67E5973-13F5-4A9B-9EAD-785433A7EFBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C67E5973-13F5-4A9B-9EAD-785433A7EFBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C67E5973-13F5-4A9B-9EAD-785433A7EFBE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0880EF4A-EAA9-4F74-B808-E53D01572E53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0880EF4A-EAA9-4F74-B808-E53D01572E53}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0880EF4A-EAA9-4F74-B808-E53D01572E53}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0880EF4A-EAA9-4F74-B808-E53D01572E53}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0BF37D5A-17E4-44BC-BABE-9462E7E242A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0BF37D5A-17E4-44BC-BABE-9462E7E242A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0BF37D5A-17E4-44BC-BABE-9462E7E242A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0BF37D5A-17E4-44BC-BABE-9462E7E242A9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{608283B8-3B52-4400-868B-BB7B06E5360E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{608283B8-3B52-4400-868B-BB7B06E5360E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{608283B8-3B52-4400-868B-BB7B06E5360E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{608283B8-3B52-4400-868B-BB7B06E5360E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D6F92397-D286-4018-A37C-315AB95C0E8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D6F92397-D286-4018-A37C-315AB95C0E8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D6F92397-D286-4018-A37C-315AB95C0E8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D6F92397-D286-4018-A37C-315AB95C0E8A}.Release|Any CPU.Build.0 = Release|Any CPU
+                {7A67310A-A4FA-49E2-85D0-75F8B51FAE6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A67310A-A4FA-49E2-85D0-75F8B51FAE6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A67310A-A4FA-49E2-85D0-75F8B51FAE6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A67310A-A4FA-49E2-85D0-75F8B51FAE6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0352711-05AA-40E5-9012-EBCA38AE3F61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0352711-05AA-40E5-9012-EBCA38AE3F61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0352711-05AA-40E5-9012-EBCA38AE3F61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0352711-05AA-40E5-9012-EBCA38AE3F61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{380AC10D-D76E-4C51-B59D-8D847A904D88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{380AC10D-D76E-4C51-B59D-8D847A904D88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{380AC10D-D76E-4C51-B59D-8D847A904D88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{380AC10D-D76E-4C51-B59D-8D847A904D88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1810ADDE-A2D9-4C59-A9E9-A32E58AA489B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1810ADDE-A2D9-4C59-A9E9-A32E58AA489B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1810ADDE-A2D9-4C59-A9E9-A32E58AA489B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1810ADDE-A2D9-4C59-A9E9-A32E58AA489B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F743463-75FF-47F0-87CD-DFD36ED0F7E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F743463-75FF-47F0-87CD-DFD36ED0F7E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F743463-75FF-47F0-87CD-DFD36ED0F7E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F743463-75FF-47F0-87CD-DFD36ED0F7E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90DF4C2D-9684-4CA3-8A21-B0A3A7F47A17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90DF4C2D-9684-4CA3-8A21-B0A3A7F47A17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90DF4C2D-9684-4CA3-8A21-B0A3A7F47A17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90DF4C2D-9684-4CA3-8A21-B0A3A7F47A17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E708C900-038E-4DDE-89A7-A0852BB4FAB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E708C900-038E-4DDE-89A7-A0852BB4FAB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E708C900-038E-4DDE-89A7-A0852BB4FAB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E708C900-038E-4DDE-89A7-A0852BB4FAB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E5D372F-6D19-4E52-A7C6-385015793510}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E5D372F-6D19-4E52-A7C6-385015793510}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E5D372F-6D19-4E52-A7C6-385015793510}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E5D372F-6D19-4E52-A7C6-385015793510}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {9EED3627-C325-44BB-99A6-649C736C6A29}
+		SolutionGuid = {061FB609-8D90-480B-A3F5-3C4E9345C31B}
 	EndGlobalSection
 EndGlobal

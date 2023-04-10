@@ -7,6 +7,7 @@ using XTC.FMP.MOD.MeeMake.LIB.Proto;
 using XTC.FMP.MOD.MeeMake.LIB.MVCS;
 using System.Collections;
 using System.IO;
+using Unity.VisualScripting;
 
 namespace XTC.FMP.MOD.MeeMake.LIB.Unity
 {
@@ -99,8 +100,17 @@ namespace XTC.FMP.MOD.MeeMake.LIB.Unity
                 camera_.transform.localPosition = Vector3.zero;
                 camera_.rect = new Rect(style_.camera.viewport.x, style_.camera.viewport.y, style_.camera.viewport.w, style_.camera.viewport.h);
                 camera_.depth = style_.camera.depth;
-                Rect rect = camera_.pixelRect;
-                wrapSwipeCamera(camera_.transform);
+                if (style_.camera.renderer == "texture")
+                {
+                    // TODO：临时方案
+                    wrapSwipeTexture(camera_.transform);
+                    rootWorld.transform.localPosition = new Vector3(99999, 99999, 99999);
+                    rootWorld.transform.Find("Canvas3D").gameObject.SetActive(false);
+                }
+                else
+                {
+                    wrapSwipeCamera(camera_.transform);
+                }
             }
 
             rootUI.transform.Find("btnConsoleLeft").GetComponent<Button>().onClick.AddListener(() =>
@@ -159,7 +169,7 @@ namespace XTC.FMP.MOD.MeeMake.LIB.Unity
             string uri = _uri;
             if (_source == "assloud://")
             {
-                uri = Path.Combine(settings_["path.assets"].AsString(), _uri.Replace(".xma", "@"+settings_["platform"].AsString() + ".xma"));
+                uri = Path.Combine(settings_["path.assets"].AsString(), _uri.Replace(".xma", "@" + settings_["platform"].AsString() + ".xma"));
             }
             runtime_.Initialize(rootWorld);
             // 移动Canvas3D到世界坐标原点，加载完成后，再移动到spaceRoot的原点
@@ -236,6 +246,44 @@ namespace XTC.FMP.MOD.MeeMake.LIB.Unity
                 _gesture.position.x > camera.pixelRect.x + camera.pixelRect.width ||
                 _gesture.position.y < camera.pixelRect.y ||
                 _gesture.position.y > camera.pixelRect.y + camera.pixelRect.height)
+                    return;
+                var vec = _camera.localRotation.eulerAngles;
+                vec.x = vec.x - _gesture.swipeVector.y;
+                if (vec.x > 70 && vec.x < 180)
+                    vec.x = 70;
+                if (vec.x < 290 && vec.x > 180)
+                    vec.x = 290;
+                _camera.rotation = Quaternion.Euler(vec.x, vec.y, vec.z);
+            });
+        }
+
+        // TODO：临时方案
+        private void wrapSwipeTexture(Transform _camera)
+        {
+            var renderer = rootUI.transform.Find("[slot]").GetComponent<RectTransform>();
+            var image = renderer.AddComponent<RawImage>();
+            var renderTexture = new RenderTexture((int)renderer.rect.width, (int)renderer.rect.height, 24, RenderTextureFormat.ARGB32);
+            camera_.targetTexture = renderTexture;
+            image.texture = renderTexture;
+
+            var camera = _camera.GetComponent<Camera>();
+            var swipeH = image.gameObject.AddComponent<HedgehogTeam.EasyTouch.QuickSwipe>();
+            swipeH.swipeDirection = HedgehogTeam.EasyTouch.QuickSwipe.SwipeDirection.Horizontal;
+            swipeH.onSwipeAction = new HedgehogTeam.EasyTouch.QuickSwipe.OnSwipeAction();
+            swipeH.onSwipeAction.AddListener((_gesture) =>
+            {
+                if (_gesture.pickedUIElement != renderer.gameObject)
+                    return;
+                var vec = _camera.localRotation.eulerAngles;
+                vec.y = vec.y + _gesture.swipeVector.x;
+                _camera.localRotation = Quaternion.Euler(vec.x, vec.y, vec.z);
+            });
+            var swipeV = image.gameObject.AddComponent<HedgehogTeam.EasyTouch.QuickSwipe>();
+            swipeV.swipeDirection = HedgehogTeam.EasyTouch.QuickSwipe.SwipeDirection.Vertical;
+            swipeV.onSwipeAction = new HedgehogTeam.EasyTouch.QuickSwipe.OnSwipeAction();
+            swipeV.onSwipeAction.AddListener((_gesture) =>
+            {
+                if (_gesture.pickedUIElement != renderer.gameObject)
                     return;
                 var vec = _camera.localRotation.eulerAngles;
                 vec.x = vec.x - _gesture.swipeVector.y;

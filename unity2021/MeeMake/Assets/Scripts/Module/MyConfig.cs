@@ -34,6 +34,8 @@ namespace XTC.FMP.MOD.MeeMake.LIB.Unity
             public int depth { get; set; }
             [XmlElement("Viewport")]
             public Viewport viewport { get; set; }
+            [XmlAttribute("renderer")]
+            public string renderer { get; set; } = "";
         }
 
         public class Style
