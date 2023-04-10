@@ -7,7 +7,6 @@ using XTC.FMP.MOD.MeeMake.LIB.Proto;
 using XTC.FMP.MOD.MeeMake.LIB.MVCS;
 using System.Collections;
 using System.IO;
-using Unity.VisualScripting;
 
 namespace XTC.FMP.MOD.MeeMake.LIB.Unity
 {
@@ -261,7 +260,7 @@ namespace XTC.FMP.MOD.MeeMake.LIB.Unity
         private void wrapSwipeTexture(Transform _camera)
         {
             var renderer = rootUI.transform.Find("[slot]").GetComponent<RectTransform>();
-            var image = renderer.AddComponent<RawImage>();
+            var image = renderer.gameObject.AddComponent<RawImage>();
             var renderTexture = new RenderTexture((int)renderer.rect.width, (int)renderer.rect.height, 24, RenderTextureFormat.ARGB32);
             camera_.targetTexture = renderTexture;
             image.texture = renderTexture;
